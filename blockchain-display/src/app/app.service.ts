@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AppService {
-    url = "https://blockchain.info/ticker";
+    url = "https://blockchain.com/ticker";
     constructor(private http:Http) { }
     getWithObservable(): Observable<any[]> {
         return this.http.get(this.url)
